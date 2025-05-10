@@ -1,5 +1,8 @@
 #include <iostream>
+using std::cout;
+
 int main() {
-  std::cout << "Heyo from Miyo!" << std::endl;
+  cout << "Heyo from Miyo!" << '\n';
+  cout << "Forgot. Kisli privet!" << '\n';
   return 0;
 }
