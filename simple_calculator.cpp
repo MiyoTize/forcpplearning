@@ -8,11 +8,11 @@ int main() {
 
   switch(answer) { // request a response from the user to continue the program
     case 1:
-      if (answer = 'y') { // yes
+      if (answer == 'y') { // yes
         std::cout << "Super!" << '\n';
       };
     case 2:
-      if (answer = 'n') { // no
+      if (answer == 'n') { // no
         std::cout << "Sadness." << '\n';
           break;
       std::cout << "Try again!" << std::endl;
