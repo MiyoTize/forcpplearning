@@ -3,7 +3,8 @@
 
 int main() {
   std::cout << "Heyo! Maybe you want solve something? Y/n" << std::endl;
-  std::cin << std::string answer{};
+  std::string answer{};
+  std::cin >> answer{};
 
   switch(answer) { // request a response from the user to continue the program
     case 1:
@@ -21,19 +22,18 @@ std::cout << "Write first number please: " << double x << '\n';
 std::cout << "Write second number please: " << double y << '\n';
 
 std::cout << "What you want? +, -, *, / ?" << '\n' >> std::cin << int symbol;
+  std::string symbol;
+  std::cin >> symbol;
   switch(symbol) {
     case '+':
-      std::cout << "Result: " << x + y << std::endl;
-      return 0;
+      std::cout <<"Result: " << x + y << std::endl;
     case '-':
       std::cout << "Result: " << x - y << std::endl;
-      rerurn 0;
     case '*':
       std::cout << "Result: " << x * y << std::endl;
-      rerurn 0;
     case '/':
       std::cout << "Result: " << x / y << std::endl;
-      rerurn 0;
+    return 0;
   };
     std::cout << "Please, try again" << '\n';
     return 0;
