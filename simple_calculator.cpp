@@ -17,6 +17,29 @@ int main() {
       };
    };
 
+std::cout << "Write first number please: " << double x << '\n';
+std::cout << "Write second number please: " << double y << '\n';
+
+std::cout << "What you want? +, -, *, / ?" << '\n' >> std::cin << int symbol;
+  switch(symbol) {
+    case '+':
+      std::cout << "Result: " << x + y << std::endl;
+      return 0;
+    case '-':
+      std::cout << "Result: " << x - y << std::endl;
+      rerurn 0;
+    case '*':
+      std::cout << "Result: " << x * y << std::endl;
+      rerurn 0;
+    case '/':
+      std::cout << "Result: " << x / y << std::endl;
+      rerurn 0;
+  };
+    std::cout << "Please, try again" << '\n';
+    return 0;
+  };
+      
+      
    
 
 
