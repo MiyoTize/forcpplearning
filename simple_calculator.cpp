@@ -19,15 +19,16 @@ int main() {
       return 0;
       };
    };
-
+	
+  double x, y;
   std::cout << "Write first number please: " << '\n';
-	std::cin >> double x;
+  std::cin >> x;
   std::cout << "Write second number please: " << '\n';
-	std::cin >> double y;
+  std::cin >> y;
 
   std::cout << "What you want? +, -, *, / ?" << '\n'
   std::string symbol;
-  std::cin >> int symbol;
+  std::cin >> symbol;
   switch(symbol) {
     case '+':
       std::cout <<"Result: " << x + y << std::endl;
