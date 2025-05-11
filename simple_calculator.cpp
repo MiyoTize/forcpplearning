@@ -1,25 +1,23 @@
 #include <iostream>
 #include <string>
-using std::cout;
-using std::endl;
-using std::cin;
-using std::string;
 
 int main() {
-  cout << "Heyo! Maybe you want solve something? Y/n" << endl;
-  cin << string answer{};
+  std::cout << "Heyo! Maybe you want solve something? Y/n" << std::endl;
+  std::cin << std::string answer{};
 
-  switch(answer) {
+  switch(answer) { // request a response from the user to continue the program
     case 1:
-      if (answer = y) {
-        cout << "Super!" << '\n';
+      if (answer = 'y') { // yes
+        std::cout << "Super!" << '\n';
       };
     case 2:
-      if (answer = n) {
-        cout << "Sadness. << '\n';
+      if (answer = 'n') { // no
+        std::cout << "Sadness. << '\n';
           break;
       };
+   };
 
+   
 
 
 
