@@ -12,7 +12,7 @@ int main() {
       };
     case 2:
       if (answer = 'n') { // no
-        std::cout << "Sadness. << '\n';
+        std::cout << "Sadness." << '\n';
           break;
       };
    };
