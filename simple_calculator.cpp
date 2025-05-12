@@ -1,7 +1,8 @@
 #include <iostream>
 
 int main() {
-  std::cout << "Heyo! Maybe you want solve something? Y/n" << std::endl;
+  std::cout << "Heyo! Here Miyo Kislyy :)" << '\n';
+  std::cout << "Maybe you want solve something? Y/n ";
   char a;
     std::cin >> a; // answer
 
