@@ -4,7 +4,7 @@ int main() {
   std::cout << "Heyo! Here Miyo Kislyy :)" << '\n';
   std::cout << "Maybe you want solve something? Y/n ";
   char a;
-    std::cin >> a; // answer
+  std::cin >> a; // answer
 
   switch(a) { // request a response from the user to continue the program
     case 'y':
