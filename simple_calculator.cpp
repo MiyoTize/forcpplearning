@@ -43,8 +43,8 @@ int main() {
     case '/':
       std::cout << "Result: " << x / y << std::endl;
       break;
+    
+    std::cout << "Please, try again" << '\n';
+    return 0;
   };
-
-  std::cout << "Please, try again" << '\n';
-  return 0;
 };
