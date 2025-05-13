@@ -35,7 +35,7 @@ int main() {
 		std::cout << "Result: ";
 		return result;
 	};
-	std::cout << "Bye!" << std::endl;
+	std::cout << "Bye!";
 	return 0;
 };
 
