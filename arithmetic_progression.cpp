@@ -7,7 +7,7 @@ int main() {
 	std::cout << "Do you want solve? (Y/n): ";
 	std::cin >> answer;
   while(answer == 'y') {
-		std::cout << "Please? Write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
+		std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
 		int choice;
 		double result;
 		std::cin >> choice;
