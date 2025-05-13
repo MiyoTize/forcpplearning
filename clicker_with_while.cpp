@@ -2,7 +2,7 @@
 #include <string>
 
 int main() {
-	std::cout << "Heyo! Here Miyo Kislyy!" << std::endl;
+	std::cout << "Heyo! Here Miyo Kislyy!";
 	std::cout << "Do you want play in clicker? Y/n ";
 	char a; // answer
 	std::cin >> a;
