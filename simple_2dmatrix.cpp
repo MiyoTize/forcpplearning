@@ -12,8 +12,8 @@ int main() {
     while(matrix[y] >0) {
       ++y;
       std::cout << matrix[x][y];
-      };
+      }
     ++x;
     std::cout << matrix[x][y];
-  };
+  }
 };
