@@ -3,10 +3,10 @@
 int main() {
   int matrix[5][5] = {
   {1, 2, 3, 4, 5},
-  {1, 2, 3, 4, 5},
-  {1, 2, 3, 4, 5},
-  {1, 2, 3, 4, 5},
-  {1, 2, 3, 4, 5}
+  {6, 7, 8, 9, 10},
+  {11, 12, 13, 14, 15},
+  {16, 17, 18, 19, 20},
+  {21, 22, 23, 24, 25}
   };
 
   int x, y;
@@ -15,8 +15,8 @@ int main() {
   std::cour << "Heyo! Here Miyo!\n"
   std::cout << "What do you want? "; 
   std::cin >> answer;
-  switch(answer) {
-    case 1:
+  switch(answer) { 
+    case 1: // all string printed
       while(matrix[x] < 4) {
         while(matrix[y] < 4) {
           ++y;
@@ -26,24 +26,24 @@ int main() {
         std::cout << matrix[x][y] << " ";
         }
     
-    case 2:
+    case 2: // printed only one number
       std::cout << "Please, write a place of mAssive: ";
       std::cin >> x, y;
       std::cout << "Result: " << matrix[x][y];
       return 0;
     
-    case 3:
+    case 3: // printed string ( x or y )
       char xory;
       std::cout << "Please, write x or y of mAssive (1 or 2): ";
       switch(xory) {
-        case 1:
+        case 1: // for x
           std::cout << "Please, write x here: ";
           std::cin >> x;
           while(matrix[y] < 4) {
             std::cout << matrix[x][y] << " ";
             ++y;
           }
-        case 2:
+        case 2: // for y
           std::cout << "Please, write y here: ";
           std::cin >> y;
           while(matrix[x] < 4) {
