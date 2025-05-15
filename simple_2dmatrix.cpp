@@ -24,4 +24,8 @@ int main() {
     case 2:
       for(matrix[x][y], x < 3, ++x) {
         for(matrix[x][y], y < 3, ++y) {
+          std::cout << matrix[x][y];
+          }
+        std::cout << matrix[x][y];
+        }
 };
