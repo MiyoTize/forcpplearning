@@ -1,31 +1,56 @@
 #include <iostream>
 
 int main() {
-  int matrix[3][3] = {
-  {1, 2, 3},
-  {1, 2, 3},
-  {1, 2, 3}
+  int matrix[5][5] = {
+  {1, 2, 3, 4, 5},
+  {1, 2, 3, 4, 5},
+  {1, 2, 3, 4, 5},
+  {1, 2, 3, 4, 5},
+  {1, 2, 3, 4, 5}
   };
-  
+
+  int x, y;
   char answer;
+
+  std::cour << "Heyo! Here Miyo!\n"
   std::cout << "What do you want? "; 
   std::cin >> answer;
   switch(answer) {
     case 1:
-      int x = 0, y = 0;
-      while(matrix[x] > 0) {
-        while(matrix[y] >0) {
+      while(matrix[x] < 4) {
+        while(matrix[y] < 4) {
           ++y;
-          std::cout << matrix[x][y];
+          std::cout << matrix[x][y] << " ";
           }
         ++x;
-        std::cout << matrix[x][y];
-      }
-    case 2:
-      for(matrix[x][y], x < 3, ++x) {
-        for(matrix[x][y], y < 3, ++y) {
-          std::cout << matrix[x][y];
-          }
-        std::cout << matrix[x][y];
+        std::cout << matrix[x][y] << " ";
         }
-};
+    
+    case 2:
+      std::cout << "Please, write a place of mAssive: ";
+      std::cin >> x, y;
+      std::cout << "Result: " << matrix[x][y];
+      return 0;
+    
+    case 3:
+      char xory;
+      std::cout << "Please, write x or y of mAssive (1 or 2): ";
+      switch(xory) {
+        case 1:
+          std::cout << "Please, write x here: ";
+          std::cin >> x;
+          while(matrix[y] < 4) {
+            std::cout << matrix[x][y] << " ";
+            ++y;
+          }
+        case 2:
+          std::cout << "Please, write y here: ";
+          std::cin >> y;
+          while(matrix[x] < 4) {
+            std::cout << matrix[x][y] << " ";
+            ++x;
+          }
+  }
+  std::cout << "Bye!";
+  return 0;
+}
