@@ -3,8 +3,7 @@
 
 #include <iostream>
 
-int sum(double, double, double, double, double)
-{
+int sum(double, double, double, double, double) {
   std::cout << "Please, write the number :";
   double num{};
   std::cin >> num;
