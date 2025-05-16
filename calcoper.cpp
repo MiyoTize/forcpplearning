@@ -11,19 +11,19 @@ int main() {
   
   std::cout << "\nHow many times You want use my code?\n";
   std::cout << "Please, write here: ";
-  int n, z = 0; // n - how many times, z - strange way, but
+  int n, m, z = 0; // n - how many times, z - strange way, but
   std::cin >> n;
 
-  while(z!=n and n>0) {
+  while(z!=n && n>0) {
     if(answer == 'y') {
-      double solve(double x, double y) {
+      int solve(double x, double y) {
       std::cout << "\nPlease, write here x and y:";
       std::cin >> x, y;
 
-      std::cout << "\nResult(+): " << z{x+y};
-      std::cout << "\nResult(-): " << z{x-y};
-      std::cout << "\nResult(*): " << z{x*y};
-      std::cout << "\nResult(/): " << z{x/y} << "\n";
+      std::cout << "\nResult(+): " << m{x+y};
+      std::cout << "\nResult(-): " << m{x-y};
+      std::cout << "\nResult(*): " << m{x*y};
+      std::cout << "\nResult(/): " << m{x/y} << "\n";
       }
     }
     else {
