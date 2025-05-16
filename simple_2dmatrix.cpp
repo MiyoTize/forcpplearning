@@ -12,19 +12,19 @@ int main() {
   int x, y;
   char answer;
 
-  std::cour << "Heyo! Here Miyo!\n"
+  std::cout << "Heyo! Here Miyo!\n";
   std::cout << "What do you want? "; 
   std::cin >> answer;
   switch(answer) { 
     case 1: // all string printed
-      while(matrix[x] < 4) {
-        while(matrix[y] < 4) {
+      while(x < 4) {
+        while(y < 4) {
           ++y;
           std::cout << matrix[x][y] << " ";
-          }
+        }
         ++x;
         std::cout << matrix[x][y] << " ";
-        }
+      }
     
     case 2: // printed only one number
       std::cout << "Please, write a place of mAssive: ";
@@ -39,18 +39,19 @@ int main() {
         case 1: // for x
           std::cout << "Please, write x here: ";
           std::cin >> x;
-          while(matrix[y] < 4) {
+          while(y < 4) {
             std::cout << matrix[x][y] << " ";
             ++y;
           }
         case 2: // for y
           std::cout << "Please, write y here: ";
           std::cin >> y;
-          while(matrix[x] < 4) {
+          while(x < 4) {
             std::cout << matrix[x][y] << " ";
             ++x;
           }
+      }
   }
-  std::cout << "Bye!";
-  return 0;
+std::cout << "Bye!";
+return 0;
 }
