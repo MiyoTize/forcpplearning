@@ -16,7 +16,8 @@ int main() {
 
   while(z!=n && n>0) {
     if(answer == 'y') {
-      int solve(double x, double y) {
+      int x{};
+      int y{};
       std::cout << "\nPlease, write here x and y:";
       std::cin >> x, y;
 
@@ -24,10 +25,9 @@ int main() {
       std::cout << "\nResult(-): " << m{x-y};
       std::cout << "\nResult(*): " << m{x*y};
       std::cout << "\nResult(/): " << m{x/y} << "\n";
-      }
     }
     else {
-    break;
+      break;
     }
     ++z;
   }
