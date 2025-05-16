@@ -16,8 +16,13 @@ int main() {
       case 1:
         std::cout << "\nWrite a, b and n: ";
         std::cin >> a, b, n;
-        result = a + b*(n-1); // sum
-
+	if(n!=1 && b!=0) {
+          result = a + b*(n-1); // sum
+	}
+        else {
+          std::cout << "Fucking failed!";
+          return 0;
+	}
       case 2:
         std::cout << "\nWrite s, b and n: ";
         std::cin >> s, b, n;
