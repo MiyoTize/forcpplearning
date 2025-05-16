@@ -16,10 +16,12 @@ int main() {
   std::cout << "What do you want? "; 
   int answer;
   std::cin >> answer;
+  int x{};
+  int y{};
   switch(answer) {
     case 1: // all string printed
-      int x = 0;
-      int y = 0;
+      x = 0;
+      y = 0;
       for(x < 4) {
         while(y < 4) {
           std::cout << matrix[x][y] << ", ";
@@ -42,7 +44,7 @@ int main() {
         case 1: // for x
           std::cout << "Please, write x here: ";
           std::cin >> x;
-          int y = 0;
+          y = 0;
           while(y < 4) {
             std::cout << matrix[x][y] << ", ";
             ++y;
@@ -50,7 +52,7 @@ int main() {
         case 2: // for y
           std::cout << "Please, write y here: ";
           std::cin >> y;
-          int x = 0;
+          x = 0;
           while(x < 4) {
             std::cout << matrix[x][y] << ", ";
             ++x;
