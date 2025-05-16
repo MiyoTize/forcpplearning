@@ -4,7 +4,7 @@
 #include <iostream>
 
 int sum(double, double, double, double, double) {
-  std::cout << "Please, write the number :";
+  std::cout << "Please, write the number: ";
   double num{};
   std::cin >> num;
   std::cout << " ";
