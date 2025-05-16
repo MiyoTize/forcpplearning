@@ -1,3 +1,6 @@
+
+// THIS CODE WORKS BADLY, ILL FIX IT SOON
+
 #include <iostream>
 
 int main() {
