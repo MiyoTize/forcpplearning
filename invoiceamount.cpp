@@ -5,9 +5,9 @@
 
 int sum(double, double, double, double, double) {
   std::cout << "Please, write the number: ";
-  double num{};
+  double num;
   std::cin >> num;
-  std::cout << " ";
+  std::cout << "\n ";
   return num;
 }
 
@@ -26,7 +26,7 @@ int main() {
     std::cout << "Result: " << x + y + z + a + b;
   }
   else {
-  std::cout << "Ooooops... Try again, please";
+    std::cout << "Ooooops... Try again, please";
   return 0;
   }
 }
