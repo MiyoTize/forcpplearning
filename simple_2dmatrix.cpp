@@ -1,3 +1,6 @@
+
+// WHY THIS CODE DOESNT WORK :(((((((((((((((
+
 #include <iostream>
 
 int main() {
@@ -9,22 +12,22 @@ int main() {
   {21, 22, 23, 24, 25}
   };
 
-  int x, y;
-  char answer;
-
   std::cout << "Heyo! Here Miyo!\n";
   std::cout << "What do you want? "; 
-  std::cin >> answer;
-  switch(answer) { 
+  int answer;
+	std::cin >> answer;
+  switch(answer) {
     case 1: // all string printed
-      while(x < 4) {
+      int x = 0;
+			int y = 0;
+			for(x < 4) {
         while(y < 4) {
+          std::cout << matrix[x][y] << ", ";
           ++y;
-          std::cout << matrix[x][y] << " ";
-        }
+				}
+        std::cout << matrix[x][y] << ", ";
         ++x;
-        std::cout << matrix[x][y] << " ";
-      }
+			}
     
     case 2: // printed only one number
       std::cout << "Please, write a place of mAssive: ";
@@ -39,19 +42,21 @@ int main() {
         case 1: // for x
           std::cout << "Please, write x here: ";
           std::cin >> x;
+					int y = 0;
           while(y < 4) {
-            std::cout << matrix[x][y] << " ";
+            std::cout << matrix[x][y] << ", ";
             ++y;
           }
         case 2: // for y
           std::cout << "Please, write y here: ";
           std::cin >> y;
+					int x = 0;
           while(x < 4) {
-            std::cout << matrix[x][y] << " ";
+            std::cout << matrix[x][y] << ", ";
             ++x;
           }
       }
   }
-std::cout << "Bye!";
-return 0;
+  std::cout << "Bye!";
+  return 0;
 }
