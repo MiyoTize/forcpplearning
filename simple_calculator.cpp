@@ -14,13 +14,13 @@ int calc() {
   switch(s) {
     case '+':
       std::cout << "Result:\n";
-			std::cout << "x + y = " << x + y << std::endl;
+      std::cout << "x + y = " << x + y << std::endl;
       return 0;
 		
     case '-':
       std::cout << "Result:\n";
-			std::cout << "x - y = " << x - y << std::endl;
-			std::cout << "y - x = " << y - x << std::endl;
+      std::cout << "x - y = " << x - y << std::endl;
+      std::cout << "y - x = " << y - x << std::endl;
       return 0;
 		
     case '*':
@@ -29,75 +29,74 @@ int calc() {
       return 0;
 		
     case '/':
-			std::cout << "Result:\n";
-			if(y!=0) {
+      std::cout << "Result:\n";
+      if(y!=0) {
         std::cout << "x / y = " << x / y << std::endl; 
-			  return 0;
-			}
-      else {
-				std::cout << "(x/y): fucking fail!" << std::endl;
         return 0;
-			}
+      }
+      else {
+        std::cout << "(x/y): fucking fail!" << std::endl;
+        return 0;
+      }
 
-			if(x!=0) {
+      if(x!=0) {
         std::cout << "y / x = " << y / x << std::endl; 
-			  return 0;
-			}
-      else {
-				std::cout << "(y/x): fucking fail!" << std::endl;
         return 0;
-			}
+      }
+      else {
+        std::cout << "(y/x): fucking fail!" << std::endl;
+        return 0;
+      }
 
     case 'p':
       std::cout << "Result:\n";
-			std::cout << "pow(x, y) = " << pow(x, y) << std::endl;
-			std::cout << "pow(y, x) = " << pow(y, x) << std::endl;
+      std::cout << "pow(x, y) = " << pow(x, y) << std::endl;
+      std::cout << "pow(y, x) = " << pow(y, x) << std::endl;
       return 0;
 	  
     case 's':
       std::cout << "Result:\n";
-			if(x>=0) {
-				std::cout << "sqrt(x) = " << sqrt(x);
-			  return 0;
-			}
-			else {
-				std::cout << "(sqrt(x)): fucking fail!" << std::endl;
-				return 0;
-			}
-
-			if(y>=0) {
-				std::cout << "sqrt(y) = " << sqrt(y) << std::endl;
+      if(x>=0) {
+        std::cout << "sqrt(x) = " << sqrt(x);
         return 0;
       }
-			else {
-				std::cout << "(sqrt(y)): fucking fail!" << std::endl;
-				return 0;
-			}
+      else {
+        std::cout << "(sqrt(x)): fucking fail!" << std::endl;
+        return 0;
+      }
+
+      if(y>=0) {
+        std::cout << "sqrt(y) = " << sqrt(y) << std::endl;
+        return 0;
+      }
+      else {
+        std::cout << "(sqrt(y)): fucking fail!" << std::endl;
+        return 0;
+      }
 
     case 'l':
-	    std::cout << "Result:\n";
-			if(x>=0) {
-				std::cout << "log(x) = " << log(x) << std::endl;
-				return 0;
-			}
-			else {
-				std::cout << "(log(x)): fucking fail!" << std::endl;
-				return 0;
-			}
+      std::cout << "Result:\n";
+      if(x>=0) {
+        std::cout << "log(x) = " << log(x) << std::endl;
+        return 0;
+      }
+      else {
+        std::cout << "(log(x)): fucking fail!" << std::endl;
+        return 0;
+      }
 
-			if(y>=0) {
-				std::cout << "log(y) = " << log(y) << std::endl;
+      if(y>=0) {
+        std::cout << "log(y) = " << log(y) << std::endl;
+        return 0;
+      }
+      else {
+        std::cout << "(log(y)): fucking fail!" << std::endl;
         return 0;
 			}
-      else {
-				std::cout << "(log(y)): fucking fail!" << std::endl;
-				return 0;
-			}
-
     case 'r':
       std::cout << "Result:\n";
-			std::cout << "round(x) = " << round(x) << std::endl;
-			std::cout << "round(y) = " << round(y) << std::endl;
+      std::cout << "round(x) = " << round(x) << std::endl;
+      std::cout << "round(y) = " << round(y) << std::endl;
       return 0;
   }
   return 0;
