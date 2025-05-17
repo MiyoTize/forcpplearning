@@ -8,7 +8,7 @@ int calc() {
   std::cout << "Write second number please: ";
   std::cin >> y;
 
-  std::cout << "What you want?\n1.+\n2.-\n3.*\n4./\n5.^\n6.s (sqrt)\n7.l (log)\n8.r (round)\nWrite here: ";
+  std::cout << "What you want?\n1.+\n2.-\n3.*\n4./\n5.p (pow)\n6.s (sqrt)\n7.l (log)\n8.r (round)\nWrite here: ";
   char s;
   std::cin >> s; // symbol or word
   switch(s) {
@@ -28,8 +28,8 @@ int calc() {
       std::cout << "Result:\nx / y = " << x / y << ", y / x = " << y / x << std::endl;
       return 0;
 	  
-    case '^':
-      std::cout << "Result:\nx ^ y = " << x ^ y << ", y ^ x = " << y ^ x << std::endl;
+    case 'p':
+      std::cout << "Result:\npow(x, y)  = " << pow(x, y) << ", pow(y, x) = " << pow(y, x) << std::endl;
       return 0;
 	  
     case 's':
