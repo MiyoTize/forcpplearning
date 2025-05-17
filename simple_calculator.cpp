@@ -8,36 +8,40 @@ int calc() {
   std::cout << "Write second number please: ";
   std::cin >> y;
 
-  std::cout << "What you want?\n1.+\n2.-\n3.*\n4./\n5.s (sqrt)\n6.l (log)\n7.r (round)\nWrite here: ";
+  std::cout << "What you want?\n1.+\n2.-\n3.*\n4./\n5.^\n6.s (sqrt)\n7.l (log)\n8.r (round)\nWrite here: ";
   char s;
   std::cin >> s; // symbol or word
   switch(s) {
     case '+':
-      std::cout << "Result: " << x + y << std::endl;
+      std::cout << "Result:\nx + y = " << x + y << std::endl;
       return 0;
 		
     case '-':
-      std::cout << "Result: " << x - y << std::endl;
+      std::cout << "Result:\nx - y = " << x - y << ", y -x = " << y - x << std::endl;
       return 0;
 		
     case '*':
-      std::cout << "Result: " << x * y << std::endl;
+      std::cout << "Result:\nx + y = " << x + y << std::endl;
       return 0;
 		
     case '/':
-      std::cout << "Result: " << x / y << std::endl;
+      std::cout << "Result:\nx / y = " << x / y << ", y / x = " << y / x << std::endl;
       return 0;
-
+	  
+    case '^':
+      std::cout << "Result:\nx ^ y = " << x ^ y << ", y ^ x = " << y ^ x << std::endl;
+      return 0;
+	  
     case 's':
-      std::cout << "Result: sqrt(x) = " << sqrt(x) << ", sqrt(y) = " << sqrt(y) << std::endl;
+      std::cout << "Result:\nsqrt(x) = " << sqrt(x) << ", sqrt(y) = " << sqrt(y) << std::endl;
       return 0;
 
     case 'l':
-      std::cout << "Result: log(x) = " << log(x) << ", log(y) = " << log(y) << std::endl;
+      std::cout << "Result:\nlog(x) = " << log(x) << ", log(y) = " << log(y) << std::endl;
       return 0;
 
     case 'r':
-      std::cout << "Result: round(x) = " << round(x) << ", round(y) = " << round(y) << std::endl;
+      std::cout << "Result:\n round(x) = " << round(x) << ", round(y) = " << round(y) << std::endl;
       return 0;
   }
   return 0;
