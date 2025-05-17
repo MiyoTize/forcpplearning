@@ -15,14 +15,17 @@ int calc() {
   switch(s) {
     case '+':
       std::cout << "x + y = " << x + y << std::endl;
-		
+      return 0;
+	  
     case '-':
       std::cout << "x - y = " << x - y << std::endl;
       std::cout << "y - x = " << y - x << std::endl;
-		
+      return 0;
+	  
     case '*':
       std::cout << "x * y = " << x + y << std::endl;
-		
+      return 0;
+	  
     case '/':
       if(x!=0 && y!=0) {
         std::cout << "x / y = " << x / y << std::endl; 
@@ -31,19 +34,23 @@ int calc() {
       else {
         std::cout << "Fucking fail!" << std::endl;
       }
-
+      return 0;
+	  
     case 'p':
       std::cout << "pow(x, y) = " << pow(x, y) << std::endl;
       std::cout << "pow(y, x) = " << pow(y, x) << std::endl;
+      return 0;
 	  
     case 's':
       if(x>=0 && y>=0) {
         std::cout << "sqrt(x) = " << sqrt(x) << std::endl;
         std::cout << "sqrt(y) = " << sqrt(y) << std::endl;
+      }
       else {
         std::cout << "Fucking fail!" << std::endl;
       }
-
+      return 0;
+	  
     case 'l':
       if(x>=0 && y>=0) {
         std::cout << "log(x) = " << log(x) << std::endl;
@@ -52,10 +59,12 @@ int calc() {
       else {
         std::cout << "Fucking fail!" << std::endl;
       }
-
+      return 0;
+	  
     case 'r':
       std::cout << "round(x) = " << round(x) << std::endl;
       std::cout << "round(y) = " << round(y) << std::endl;
+      return 0;
   }
   return 0;
 }
