@@ -1,50 +1,58 @@
 #include <iostream>
+#include <cmath>
 
-int main() {
-  std::cout << "Heyo! Here Miyo Kislyy :)" << '\n';
-  std::cout << "Maybe you want solve something? Y/n ";
-  char a;
-  std::cin >> a; // answer
-
-  switch(a) { // request a response from the user to continue the program
-    case 'y':
-      std::cout << "Super!" << '\n';
-      break;
-
-    case 'n':
-      std::cout << "Sadness." << '\n';
-      break;
-
-  std::cout << "Try again!" << std::endl;
-  return 0;
-  };
-	
+int calc() {
   double x, y;
   std::cout << "Write first number please: ";
   std::cin >> x;
   std::cout << "Write second number please: ";
   std::cin >> y;
 
-  std::cout << "What you want? +, -, *, / ? ";
+  std::cout << "What you want?\n1.+\n2.-\n3.*\n4./\n5.s (sqrt)\n6.l (log)\n7.r (round)\nWrite here: ";
   char s;
-  std::cin >> s; // symbol
+  std::cin >> s; // symbol or word
   switch(s) {
     case '+':
-      std::cout <<"Result: " << x + y << std::endl;
-      break;
+      std::cout << "Result: " << x + y << std::endl;
+      return 0;
 		
     case '-':
       std::cout << "Result: " << x - y << std::endl;
-      break;
+      return 0;
 		
     case '*':
       std::cout << "Result: " << x * y << std::endl;
-      break;
+      return 0;
 		
     case '/':
       std::cout << "Result: " << x / y << std::endl;
-      break;
-  };
-  std::cout << "Please, try again" << '\n';
+      return 0;
+
+    case 's':
+      std::cout << "Result: sqrt(x) = " << sqrt(x) << ", sqrt(y) = " << sqrt(y) << std::endl;
+      return 0;
+
+    case 'l':
+      std::cout << "Result: log(x) = " << log(x) << ", log(y) = " << log(y) << std::endl;
+      return 0;
+
+    case 'r':
+      std::cout << "Result: round(x) = " << round(x) << ", round(y) = " << round(y) << std::endl;
+      return 0;
+  }
   return 0;
-};
+}
+
+int main() {
+  std::cout << "Heyo! Here Miyo Kislyy :)" << '\n';
+  std::cout << "Maybe you want solve something? Y/n ";
+  char a;
+  std::cin >> a; // answer
+  while(a == 'y') {
+    int z{calc()};
+    std::cout << "Do you want continue? (Y/n): ";
+    std::cin >> a;
+  }
+  std::cout << "Bye!";
+  return 0;
+}
