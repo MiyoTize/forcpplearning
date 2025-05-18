@@ -75,7 +75,7 @@ int main() {
   char a;
   std::cin >> a; // answer
   while(a == 'y') {
-    int z{calc()};
+    int z = calc();
     std::cout << "Do you want continue? (Y/n): ";
     std::cin >> a;
   }
