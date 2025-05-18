@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-int click() {
+int click() { // for clicks
   std::cout << x << " + 1 = ";
   std::cin >> y;
   if(y == ' ') {
-    ++x;
+    ++x; // result looks like x + 1 = x+1
     std::cout << x << "\n";
   }
   return 0;
