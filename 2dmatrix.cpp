@@ -6,7 +6,7 @@
 int matrix() {
   std::cout << "Heyo! Here Miyo!\n";
   std::cout << "What do you want?\n(1) - print one number of massive\n(2) - print one string\n(3) - print all strings\n";
-	std::cout << "Please, write here: ";
+  std::cout << "Please, write here: ";
 
   int choice;
   std::cin >> choice;
@@ -21,8 +21,8 @@ int matrix() {
     
     case 2: // printed string ( x or y )
       std::cout << "Please, write x or y of massive (1 or 2): ";
-			char xory; // x or y
-			std::cin >> xory;
+      char xory; // x or y
+      std::cin >> xory;
       switch(xory) {
         case 1: // for x
           std::cout << "Please, write x here: ";
@@ -41,9 +41,9 @@ int matrix() {
             std::cout << matrix[x][y] << ", ";
             ++x;
           }
-			}
+      }
     
-		case 3: // all string printed
+    case 3: // all string printed
       x = 0;
       y = 0;
       while(x < 4) {
@@ -58,7 +58,7 @@ int matrix() {
 }
 
 int main() {
-	int matrix[5][5] = {
+  int matrix[5][5] = {
   {1, 2, 3, 4, 5},
   {6, 7, 8, 9, 10},
   {11, 12, 13, 14, 15},
@@ -67,13 +67,13 @@ int main() {
   };
 
   std::cout << "Heyo! Here Miyo!\n";
-	std::cout << "Do you want matrix?";
-	char a; // answer
-	std::cin >> a;
-	while(a == 'y') {
+  std::cout << "Do you want matrix?";
+  char a; // answer
+  std::cin >> a;
+  while(a == 'y') {
     int z{matrix()};
-		std::cout << "Do you wamt continue? (Y/n): ";
-		std::cin >> a;
+    std::cout << "Do you wamt continue? (Y/n): ";
+    std::cin >> a;
   }
   std::cout << "Bye!";
   return 0;
