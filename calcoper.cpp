@@ -16,8 +16,8 @@ int main() {
 
   while(z!=n && n>0) {
     if(answer == 'y') {
-      int x{};
-      int y{};
+      int x;
+      int y;
       std::cout << "\nPlease, write here x and y:";
       std::cin >> x, y;
 
