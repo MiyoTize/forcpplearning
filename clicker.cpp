@@ -7,7 +7,7 @@ int click() { // for clicks
   std::cout << x << " + 1 = ";
   std::cin >> y;
   if(y == ' ') {
-    ++x; // result looks like x + 1 = x+1
+    ++x; // result looks like x + 1 = ++x
     std::cout << x << "\n";
   }
   return 0;
