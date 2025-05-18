@@ -4,8 +4,6 @@
 #include <iostream>
 
 int click() {
-  int x;
-  char y;
   std::cout << x << " + 1 = ";
   std::cin >> y;
   if(y == ' ') {
@@ -24,7 +22,7 @@ int main() {
   std::cin >> a;
   if(a == 'y') {
     while(x <= 1000) {
-      int z = click();
+      int z{click()};
     }
   }
   std::cout << "Bye!";
