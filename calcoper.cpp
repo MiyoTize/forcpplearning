@@ -22,13 +22,13 @@ int calc() {
 
 int main() {
   std::cout << "Heyo! Here Miyo!\n";
-	std::cout << "Do you want use calculator? (Y/n):";
-	char a; // answer
-	std::cin >> a;
-	while(a == 'y') {
+  std::cout << "Do you want use calculator? (Y/n):";
+  char a; // answer
+  std::cin >> a;
+  while(a == 'y') {
     int z{cacl()};
-		std::cout << "\nDo you wamt continue? (Y/n): ";
-		std::cin >> a;
+    std::cout << "\nDo you wamt continue? (Y/n): ";
+    std::cin >> a;
   }
   std::cout << "Bye!";
   return 0;
