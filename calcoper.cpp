@@ -25,7 +25,7 @@ int main() {
   std::cin >> a;
   while(a == 'y') {
     int z{calc()};
-    std::cout << "\nDo you wamt continue? (Y/n): ";
+    std::cout << "\nDo you want continue? (Y/n): ";
     std::cin >> a;
   }
   std::cout << "Bye!";
