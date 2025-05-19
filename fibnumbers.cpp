@@ -18,7 +18,7 @@ int main() {
   while(a == 'y') {
     fib(n);
     ++n;
-    std::cout << "Do you want continue? (Y/n): "
+    std::cout << "Do you want continue? (Y/n): ";
     std::cin >> a;
   }
   return 0;
