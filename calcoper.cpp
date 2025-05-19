@@ -1,35 +1,35 @@
 
 // THIS CODE DOESNT WORK
 
-#include <iostream>
-
-int main() {
-  std::cout << "Heyo! Here Miyo!\n";
-  std::cout << "Do you want solve something? (Y/n): ";
-  char answer; // y or n from user
-  std::cin >> answer;
-}
-
-
-  while(z!=n && n>0) {
-    if(answer == 'y') {
-
 int calc() {
   int x;
   int y;
   std::cout << "\nPlease, write here x and y:";
   std::cin >> x, y;
 
-  std::cout << "\nResult(+): " << m{x+y};
-  std::cout << "\nResult(-): " << m{x-y};
-  std::cout << "\nResult(*): " << m{x*y};
-  std::cout << "\nResult(/): " << m{x/y} << "\n";
-}
-    else {
-      break;
-    }
-    ++z;
+  std::cout << "\nResult(+): " << x+y;
+  std::cout << "\nResult(-): " << x-y << " " << y-x;
+  std::cout << "\nResult(*): " << x*y;
+  if(x!=0 && y!=0) {
+    std::cout << "\nResult(/): " << x/y << " " << y/x;
   }
-  std::cout << "Bye!" << std::endl;
+  else {
+    std::cout << "0 is evil";
+  }
+  std::cout << "\nBye!" << std::endl;
+  return 0;
+}
+
+int main() {
+  std::cout << "Heyo! Here Miyo!\n";
+	std::cout << "Do you want use calculator? (Y/n):";
+	char a; // answer
+	std::cin >> a;
+	while(a == 'y') {
+    int z{cacl()};
+		std::cout << "\nDo you wamt continue? (Y/n): ";
+		std::cin >> a;
+  }
+  std::cout << "Bye!";
   return 0;
 }
