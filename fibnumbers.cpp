@@ -9,7 +9,7 @@ int fib(int n) {
 }
 
 int main() {
-  std::cout << "Heyo! Here Miyo!";
+  std::cout << "Heyo! Here Miyo!\n";
   std::cout << "Do you want fibnum? (Y/n): ";
   char a;
   std::cin >> a; // asnwer
