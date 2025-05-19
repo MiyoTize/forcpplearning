@@ -1,4 +1,4 @@
-#icnlude <iostream>
+#include <iostream>
 
 int calc() {
   int x;
@@ -25,7 +25,7 @@ int main() {
   char a; // answer
   std::cin >> a;
   while(a == 'y') {
-    int z{cacl()};
+    int z{calc()};
     std::cout << "\nDo you wamt continue? (Y/n): ";
     std::cin >> a;
   }
