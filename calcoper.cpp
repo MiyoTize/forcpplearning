@@ -15,7 +15,6 @@ int calc() {
   else {
     std::cout << "0 is evil";
   }
-  std::cout << "\nBye!" << std::endl;
   return 0;
 }
 
