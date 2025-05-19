@@ -1,5 +1,4 @@
-
-// THIS CODE DOESNT WORK
+#icnlude <iostream>
 
 int calc() {
   int x;
