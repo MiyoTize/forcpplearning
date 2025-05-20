@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+	int fooarr[] = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+  int arr[]    = {-2, 5, -1, 1, 0, -3, 4, 2, 3, -5, -4};
+  int n = sizeof(arr) / sizeof(arr[0]);
+
+	std::vector<int> positive_arr;
+	std::vector<int> negative_arr;
+
+  for (int x = 0; x < n; x++) {
+    if (arr[x] >= 0) {
+      positive_arr.push_back(arr[x]);
+    }
+		else {
+      negative_arr.push_back(arr[x]);
+    }
+  }
+
+	std::cout << "Heyo! Here Miyo!\n"
+		        << "Positive numbers: ";
+  for (int num : positive_arr) {
+		std::cout << num << "\n";
+  }
+
+	std::cout << "Negative numbers: ";
+  for (int num : negative_arr) {
+		std::cout << num << " ";
+  }
+  return 0;
+}
