@@ -9,8 +9,12 @@ int matrix() {
   {21, 22, 23, 24, 25}
   };
 
-  std::cout << "What do you want?\n(1) - print one number of massive\n(2) - print one string\n(3) - print all strings\n";
-  std::cout << "Please, write here: ";
+  std::cout << "What do you want?\n"
+	    << "(1) - print one number of massive\n"
+	    << "(2) - print one string\n"
+	    << "(3) - print all strings\n"
+            << "Please, write here: ";
+	
   int choice;
   std::cin >> choice;
   int x{};
@@ -62,8 +66,8 @@ return 0;
 }
 
 int main() {
-  std::cout << "Heyo! Here Miyo!\n";
-  std::cout << "Do you want matrix?";
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Do you want matrix?";
   char a; // answer
   std::cin >> a;
   while(a == 'y') {
