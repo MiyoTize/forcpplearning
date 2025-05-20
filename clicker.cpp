@@ -16,8 +16,8 @@ int click() { // for clicks
 int main() {
   int x = 0;
   char y;
-  std::cout << "Heyo! Here Miyo Kislyy!";
-  std::cout << "Do you want play in clicker? You need click 1000 times. (Y/n): ";
+  std::cout << "Heyo! Here Miyo Kislyy!"
+            << "Do you want play in clicker? You need click 1000 times. (Y/n): ";
   char a; // answer
   std::cin >> a;
   if(a == 'y') {
