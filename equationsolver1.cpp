@@ -13,17 +13,17 @@ int main() {
   double a, b, x; // Ax + B = 0
 
   std::cout << "Heyo! Here Miyo!\n"  
-	          << "You in Ax + B = 0 solver\n"
-						<< "Please, write A and B here: ";
+            << "You in Ax + B = 0 solver\n"
+            << "Please, write A and B here: ";
   std::cin >> a;
   std::cin >> b;
     
   int result = parampampam(a, b, x);
     
   if(result == 1) {
-		std::cout << "\nX = " << x;
-    }
-	else {
+    std::cout << "\nX = " << x;
+  }
+  else {
     std::cout << "\nFuck! A = 0...";
   }  
   return 0;
