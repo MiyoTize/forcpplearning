@@ -12,8 +12,8 @@ int sum(double, double, double, double, double) {
 }
 
 int main() {
-  std::cout << "Heyo! Here Miyo!\n";
-  std::cout << "Please, write numbers for sentences: ";
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Please, write numbers for sentences: ";
   double x = sum();
   double y = sum();
   double z = sum();
