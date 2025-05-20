@@ -5,8 +5,8 @@
 
 int main() {
   char answer;
-  std::cout << "Heyo! Here Miyo!\n";
-  std::cout << "Do you want solve? (Y/n): ";
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Do you want solve? (Y/n): ";
   std::cin >> answer;
 	
   while(answer == 'y') {
