@@ -6,9 +6,9 @@ int calc() {
   std::cout << "\nPlease, write here x and y:";
   std::cin >> x, y;
 
-  std::cout << "\nResult(+): " << x+y;
-  std::cout << "\nResult(-): " << x-y << " " << y-x;
-  std::cout << "\nResult(*): " << x*y;
+  std::cout << "\nResult(+): " << x+y
+            << "\nResult(-): " << x-y << " " << y-x
+            << "\nResult(*): " << x*y;
   if(x!=0 && y!=0) {
     std::cout << "\nResult(/): " << x/y << " " << y/x;
   }
@@ -19,8 +19,8 @@ int calc() {
 }
 
 int main() {
-  std::cout << "Heyo! Here Miyo!\n";
-  std::cout << "Do you want use calculator? (Y/n): ";
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Do you want use calculator? (Y/n): ";
   char a; // answer
   std::cin >> a;
   while(a == 'y') {
