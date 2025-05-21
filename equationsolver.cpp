@@ -97,20 +97,24 @@ int opersecond() {
   }
 } 
 
-int main() {
-  int answer; 
+int text() {
   std::cout << "Heyo! Here Miyo!\n"  
             << "You in equationsolver\n"
             << "Please, write what you want solve:\n"
             << "1. Ax + B = 0\n"
             << "2. Ax^2 + Bx + C = 0\n"
             << "(1/2):";
+}
+
+int main() {
+  int answer;
+  int text();
   std::cin >> answer;
   if(answer == 1) {
-    int w = operfirst();
+    int operfirst();
   }
   else if(answer == 2) {
-    int q = opersecond();
+    int opersecond();
   }
   else {
     std::cout << "\nFuckimg fail!\n";
