@@ -9,12 +9,12 @@ int main() {
   std::vector<int> positive_arr;
   std::vector<int> negative_arr;
 
-  for (int x = 0; x < n; ++x) {
-    if (arr[x] >= 0) {
-      positive_arr.push_back(arr[x]);
+  for (int i = 0; i < n; ++i) {
+    if (arr[i] >= 0) {
+      positive_arr.push_back(arr[i]);
     }
     else {
-      negative_arr.push_back(arr[x]);
+      negative_arr.push_back(arr[i]);
     }
   }
 
