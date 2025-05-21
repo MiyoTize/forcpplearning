@@ -17,16 +17,18 @@ int first(double a, double b, double x) {
 }
 int operfirst() {
   int result;
-	double a, b, x;
+  double a, b, x;
   std::cout << "Please, write A and B: ";
   std::cin >> a;
   std::cin >> b;
   double endfirst = first(a, b, x);   
   if(result == 1) {
-    std::cout << "\nX = " << x;
+    std::cout << "Have 1 x:\n"
+              << "\nX = " << x;
   }
   else {
-    std::cout << "\nFuck! A = 0...";
+    std::cout << "\nFuck! A = 0...\n"
+              << "Dont have x\n";
   }  
   return 0;
 }
@@ -78,22 +80,24 @@ int opersecond() {
   std::cin >> c;
   double endsecond = second(a, b, c);
   if(result == 1 or 2 or 5) {
-    std::cout << "x1 = " << x1 << "\n"
-              << "x2 = " << x2;
+    std::cout << "Have 2 x:\n"
+              << "x1 = " << x1 << "\n"
+              << "x2 = " << x2 << "\n";
     return 0;
   }
   else if(result == 0 or 4) {
-    std::cout << "x1 = " << x1 << "\n";
+    std::cout << "Have 1 x:\n"
+              << "x1 = " << x1 << "\n";
     return 0;
   }
   else {
-    std::cout << "Fucking fail!\n";
+    std::cout << "Fucking fail!\n"
+	      << "No have x";
     return 0;
   }
 } 
 
 int main() {
-  double a, b, c, D, x, x1, x2; // Ax + B = 0
   int answer; 
   std::cout << "Heyo! Here Miyo!\n"  
             << "You in equationsolver\n"
