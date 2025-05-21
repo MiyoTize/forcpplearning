@@ -1,5 +1,5 @@
 
-// THIS CODE DOESNT WORK
+// THIS CODE DOESNT WORK?
 
 #include <iostream>
 #include <cmath>
@@ -19,7 +19,8 @@ int operfirst() {
   int result;
   std::cout << "Please, write A and B: ";
   std::cin >> a;
-  std::cin >> b;   
+  std::cin >> b;
+  int result;
   int endfirst = first(a, b, x);   
   if(result == 1) {
     std::cout << "\nX = " << x;
@@ -29,6 +30,10 @@ int operfirst() {
   }  
   return 0;
 }
+
+// NEW BLOCK
+// NEW BLOCK
+// NEW BLOCK
 
 int second(double a, double b, double c) {
   int result;
@@ -46,7 +51,7 @@ int second(double a, double b, double c) {
   else if(c == 0) {
     x1 = 0;
     x2 = -b / a;
-    result 2; // Ax^2 + Bx = 0\
+    result = 2; // Ax^2 + Bx = 0\
   } 
   else {
     if(D < 0) {
@@ -61,7 +66,6 @@ int second(double a, double b, double c) {
       x2 = (-b - sqrt(D)) / (2 * a);
       result = 5;
     }
-    return 0;
   }
   return result;
 }
@@ -70,16 +74,24 @@ int opersecond() {
   std::cin >> a;
   std::cin >> b;
   std::cin >> c;
-  int result = second(a, b, c);
-  if(result == 1) {
+  int result;
+  int endsecond = second(a, b, c);
+  if(result == 1 or 2 or 5) {
     std::cout << "x1 = " << x1 << "\n"
               << "x2 = " << x2;
+    return 0;
   }
-  return 0;
-}
+  else if(result == 0 or 4) {
+    std::cout << "x1 = " << x1 << "\n"
+    return 0;
+  }
+  else {
+    std::cout << "Fucking fail!\n";
+    return 0;
+  }
   
 int main() {
-  double a, b, x; // Ax + B = 0
+  double a, b, c, D, x, x1, x2; // Ax + B = 0
   int answer; 
   std::cout << "Heyo! Here Miyo!\n"  
             << "You in equationsolver\n"
@@ -87,7 +99,7 @@ int main() {
             << "1. Ax + B = 0\n"
             << "2. Ax^2 + Bx + C = 0\n"
             << "(1/2):";
-  std::cim >> answer;
+  std::cin >> answer;
   if(answer == 1) {
     int w = operfirst();
   }
@@ -97,7 +109,3 @@ int main() {
   else {
     std::cout << "\nFuckimg fail!\n";
   }
-
-
-
-
