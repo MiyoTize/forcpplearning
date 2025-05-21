@@ -17,52 +17,52 @@ int matrix() {
 	
   int choice;
   std::cin >> choice;
-  int x{};
-  int y{};
+  int i{};
+  int j{};
   switch(choice) {
     case 1: // printed only one number
       std::cout << "Please, write a place of mAssive: ";
-      std::cin >> x, y;
-      std::cout << "Result: " << m[x][y];
+      std::cin >> i, j;
+      std::cout << "Result: " << m[i][j];
       return 0;
     
-    case 2: // printed string ( x or y )
-      std::cout << "Please, write x or y of massive (1 or 2): ";
-      char xory; // x or y
-      std::cin >> xory;
-      switch(xory) {
-        case 1: // for x
-          std::cout << "Please, write x here: ";
-          std::cin >> x;
-          y = 0;
-          while(y <= 4) {
-            std::cout << m[x][y] << ", ";
-            ++y;
+    case 2: // printed string ( i or j )
+      std::cout << "Please, write i or j of massive (1 or 2): ";
+      char iorj; // i or j
+      std::cin >> iorj;
+      switch(iorj) {
+        case 1: // for i
+          std::cout << "Please, write i here: ";
+          std::cin >> i;
+          j = 0;
+          while(j <= 5) {
+            std::cout << m[i][j] << ", ";
+            ++j;
           }
 
-        case 2: // for y
-          std::cout << "Please, write y here: ";
-          std::cin >> y;
+        case 2: // for j
+          std::cout << "Please, write j here: ";
+          std::cin >> j;
           x = 0;
-          while(x <= 4) {
-            std::cout << m[x][y] << ", ";
-            ++x;
+          while(i <= 5) {
+            std::cout << m[i][j] << ", ";
+            ++i;
           }
 	}
     
     case 3: // all string printed
-      x = 0;
-      y = 0;
-      while(x < 4) {
-        while(y <= 4) {
-          std::cout << m[x][y] << ", ";
-          ++y;
+      i = 0;
+      j = 0;
+      while(i < 5) {
+        while(j <= 5) {
+          std::cout << m[i][j] << ", ";
+          ++j;
         }
-        std::cout << m[x][y] << ", ";
-        ++x;
+        std::cout << m[i][j] << ", ";
+        ++i;
       }
   }
-return 0;
+  return 0;
 }
 
 int main() {
