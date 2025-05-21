@@ -19,6 +19,7 @@ int calc() {
 }
 
 int main() {
+  int x, y;
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want use calculator? (Y/n): ";
   char a; // answer
