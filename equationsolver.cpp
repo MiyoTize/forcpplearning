@@ -7,10 +7,31 @@
 int first(double a, double b, double &x) {
   if(a == 0) {
     return 0;
+  } 
+  else {
+    x = -b / a;
+    return 1;
   }
-  x = -b / a;
-  return 1;
+  return return;
 }
+
+int operfirst() {
+  std::cout << "Please, write A and B: ";
+  std::cin >> a;
+  std::cin >> b;   
+  int result = first(a, b, x);   
+  if(return == 1) {
+    std::cout << "\nX = " << x;
+  }
+  else {
+    std::cout << "\nFuck! A = 0...";
+  }  
+  return 0;
+}
+
+
+
+
 
 int second(double a, double b, double c) {
   double a, b, c, D, x1, x2;
@@ -54,21 +75,6 @@ int main() {
   }
 
 
-int operfirst() {
-  std::cout << "Please, write A and B: ";
-  std::cin >> a;
-  std::cin >> b;
-    
-  int result = first(a, b, x);
-    
-  if(result == 1) {
-    std::cout << "\nX = " << x;
-  }
-  else {
-    std::cout << "\nFuck! A = 0...";
-  }  
-  return 0;
-}
 
 int opersecond() {
   std::cout << "Please, write A, B and C: ";
