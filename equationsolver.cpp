@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cmath>
 
-int first(double a, double b, double &x) {
+int first(double a, double b, double x) {
   int result;
   if(a == 0) {
     result = 0;
@@ -17,11 +17,11 @@ int first(double a, double b, double &x) {
 }
 int operfirst() {
   int result;
+	double a, b, x;
   std::cout << "Please, write A and B: ";
   std::cin >> a;
   std::cin >> b;
-  int result;
-  int endfirst = first(a, b, x);   
+  double endfirst = first(a, b, x);   
   if(result == 1) {
     std::cout << "\nX = " << x;
   }
@@ -37,7 +37,7 @@ int operfirst() {
 
 int second(double a, double b, double c) {
   int result;
-  double a, b, c, D, x1, x2;
+  double D, x1, x2;
   D = b * b - (4 * a * c); 
   if(a == 0) { 
     x1 = -c / b;
@@ -70,26 +70,28 @@ int second(double a, double b, double c) {
   return result;
 }
 int opersecond() {
+	int result;
+	int a, b, c, D, x1, x2;
   std::cout << "Please, write A, B and C: ";
   std::cin >> a;
   std::cin >> b;
   std::cin >> c;
-  int result;
-  int endsecond = second(a, b, c);
+  double endsecond = second(a, b, c);
   if(result == 1 or 2 or 5) {
     std::cout << "x1 = " << x1 << "\n"
               << "x2 = " << x2;
     return 0;
   }
   else if(result == 0 or 4) {
-    std::cout << "x1 = " << x1 << "\n"
+    std::cout << "x1 = " << x1 << "\n";
     return 0;
   }
   else {
     std::cout << "Fucking fail!\n";
     return 0;
   }
-  
+} 
+
 int main() {
   double a, b, c, D, x, x1, x2; // Ax + B = 0
   int answer; 
@@ -108,4 +110,6 @@ int main() {
   }
   else {
     std::cout << "\nFuckimg fail!\n";
-  }
+	}
+	return 0;
+}
