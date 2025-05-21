@@ -1,3 +1,6 @@
+
+// ITS WORK STRANGE. ILL FIX SOON
+
 #include <iostream>
 
 int matrix() {
@@ -43,7 +46,7 @@ int matrix() {
         case 2: // for j
           std::cout << "Please, write j here: ";
           std::cin >> j;
-          x = 0;
+          i = 0;
           while(i <= 5) {
             std::cout << m[i][j] << ", ";
             ++i;
