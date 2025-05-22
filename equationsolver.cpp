@@ -33,10 +33,6 @@ int operfirst() {
   return 0;
 }
 
-// NEW BLOCK
-// NEW BLOCK
-// NEW BLOCK
-
 int second(double a, double b, double c) {
   int result;
   double D, x1, x2;
