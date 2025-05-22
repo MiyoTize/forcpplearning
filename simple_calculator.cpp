@@ -4,13 +4,12 @@
 int calc() {
   double x, y;
   std::cout << "Write x and y please: ";
-  std::cin >> x;
-  std::cin >> y;
+  std::cin >> x >> y;
 
   std::cout << "What you want?\n"
 	    << "1.+\n"
 	    << "2.-\n"
-	    <<"3.*\n"
+	    << "3.*\n"
 	    << "4./\n"
 	    << "5.p (pow)\n"
 	    << "6.s (sqrt)\n"
@@ -19,7 +18,7 @@ int calc() {
 	    << "Write here: ";
   char s;
   std::cin >> s; // symbol or word
-  std::cout << "Result:\n";
+  std::cout << "\nResult:\n";
   switch(s) {
     case '+':
       std::cout << "x + y = " << x + y << "\n";
