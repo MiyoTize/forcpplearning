@@ -25,7 +25,7 @@ int matrix() {
   switch(choice) {
     case 1: // printed only one number
       std::cout << "Please, write a place of mAssive: ";
-      std::cin >> i, j;
+      std::cin >> i >> j;
       std::cout << "Result: " << m[i][j];
       return 0;
     
