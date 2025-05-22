@@ -19,8 +19,7 @@ int operfirst() {
   int result;
   double a, b, x;
   std::cout << "Please, write A and B: ";
-  std::cin >> a;
-  std::cin >> b;
+  std::cin >> a >> b;
   double endfirst = first(a, b, x);   
   if(result == 1) {
     std::cout << "Have 1 x:\n"
@@ -68,12 +67,10 @@ int second(double a, double b, double c) {
   return result;
 }
 int opersecond() {
-	int result;
-	int a, b, c, D, x1, x2;
+  int result;
+  int a, b, c, D, x1, x2;
   std::cout << "Please, write A, B and C: ";
-  std::cin >> a;
-  std::cin >> b;
-  std::cin >> c;
+  std::cin >> a >> b >> c;
   double endsecond = second(a, b, c);
   if(result == 1 or 2 or 5) {
     std::cout << "Have 2 x:\n"
