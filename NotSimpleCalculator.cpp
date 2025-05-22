@@ -16,7 +16,7 @@ int ftext(char answer) { // first text
 int stext(int choice) { // second text
   int choice; // number of:
   std::cout << "You have a choice:\n"
-            << "1. Massives\n"
+            << "1. Arrays\n"
             << "2. Matrix ( 1d or 2d )\n"
             << "3. Based meth\n"
             << "4. Bitwise operations\n"
