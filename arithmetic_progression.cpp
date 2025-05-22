@@ -19,7 +19,7 @@ int main() {
     switch(choice) {
       case 1:
         std::cout << "\nWrite a, b and n: ";
-        std::cin >> a, b, n;
+        std::cin >> a >> b >> n;
         if(n!=1 && b!=0) {
           result = a + b*(n-1); // sum
         }
@@ -30,7 +30,7 @@ int main() {
 
       case 2:
         std::cout << "\nWrite s, b and n: ";
-        std::cin >> s, b, n;
+        std::cin >> s >> b >> n;
       	if(n!=1 && b!=0) {  
           result = s - b*(n-1); // first penis
         }
@@ -41,7 +41,7 @@ int main() {
 
       case 3:
         std::cout << "\nWrite s, a and n: ";
-        std::cin >> s, a, n;
+        std::cin >> s >> a >> n;
       	if(n!=0 && a!=0 && s!=0) {  
           result = s / (a * n); // diff
         }
@@ -52,7 +52,7 @@ int main() {
 
       case 4:
         std::cout << "\nWrite s, a and b: ";
-        std::cin >> s, a, b;
+        std::cin >> s >> a >> b;
         int z = s - a; // the костыль for if
       	if(z!=0 && b!=0) {  
           result = (s - a) / b; // quantity
