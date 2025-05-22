@@ -4,7 +4,7 @@ int calc() {
   int x;
   int y;
   std::cout << "\nPlease, write here x and y:";
-  std::cin >> x, y;
+  std::cin >> x >> y;
 
   std::cout << "\nResult(+): " << x+y
             << "\nResult(-): " << x-y << " " << y-x
