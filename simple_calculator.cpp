@@ -52,8 +52,7 @@ int calc() {
       if(x>=0 && y>=0) {
         std::cout << "sqrt(x) = " << sqrt(x) << "\n"
                   << "sqrt(y) = " << sqrt(y) << "\n";
-      }
-      else {
+      } else {
         std::cout << "Fucking fail!" << "\n";
       }
       return 0;
@@ -62,8 +61,7 @@ int calc() {
       if(x>=0 && y>=0) {
         std::cout << "log(x) = " << log(x) << "\n"
                   << "log(y) = " << log(y) << "\n";
-      }
-      else {
+      } else {
         std::cout << "Fucking fail!" << "\n";
       }
       return 0;
