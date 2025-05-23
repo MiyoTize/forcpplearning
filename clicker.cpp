@@ -1,30 +1,31 @@
-
-// THIS CRAZY CODE DOESNT WORK. FIX SOON
-
 #include <iostream>
 
-int click() { // for clicks
-  std::cout << x << " + 1 = ";
+int click(int x) { // for clicks
+  int y;
+	std::cout << x << " + 1 = ";
   std::cin >> y;
-  if(y == ' ') {
+  while (y == x + 1) {
     ++x; // result looks like x + 1 = ++x
-    std::cout << x << "\n";
-  }
-  return 0;
+    std::cout << "\nTrue!\n"
+	            << x << " + 1 = ";
+    std::cin >> y;
+	}
+  return x;
 }
 
 int main() {
-  int x = 0;
-  char y;
-  std::cout << "Heyo! Here Miyo Kislyy!"
-            << "Do you want play in clicker? You need click 1000 times. (Y/n): ";
-  char a; // answer
+  int x;
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Do you want play in clicker?\n"
+						<< "You need click 1000 times. (1/0):\n";
+  bool a; // answer
   std::cin >> a;
-  if(a == 'y') {
-    while(x <= 1000) {
-      int z{click()};
+  if (a == true) {
+    while (x <= 1000) {
+      int z{click(x)};
     }
+  } else {
+    std::cout << "Bye!";
+    return 0;
   }
-  std::cout << "Bye!";
-  return 0;
 }
