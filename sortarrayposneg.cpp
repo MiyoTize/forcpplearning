@@ -12,8 +12,7 @@ int main() {
   for (int i = 0; i < n; ++i) {
     if (arr[i] >= 0) {
       positive_arr.push_back(arr[i]);
-    }
-    else {
+    } else {
       negative_arr.push_back(arr[i]);
     }
   }
