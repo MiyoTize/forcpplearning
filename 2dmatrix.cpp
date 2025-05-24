@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-int matrix() {
+void matrix() {
   int m[5][5] = {
   {1, 2, 3, 4, 5},
   {6, 7, 8, 9, 10},
@@ -65,7 +65,6 @@ int matrix() {
         ++i;
       }
   }
-  return 0;
 }
 
 int main() {
