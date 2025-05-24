@@ -7,8 +7,9 @@ int main() {
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want solve something? (Y/n): ";
   char answer;
-  if (answer == 'y') {
+  while (answer == 'y') {
     fuck();
+    std::cin >> answer;
   } else {
     std::cout << "Bye!";
     return 0;
@@ -16,15 +17,13 @@ int main() {
 }  
 
 void fuck(double result) {
-  while(answer == 'y') {
-    double result;
-    std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
-    int choice; // 1 or 2 or 3 or 4
-    std::cin >> choice;
-    int a, n, b, s; // firts penis, quantity of penis, diff and sum
-    std::cout << "Result: ";
-    return result;
-  }
+  double result;
+  std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
+  int choice; // 1 or 2 or 3 or 4
+  std::cin >> choice;
+  int a, n, b, s; // firts penis, quantity of penis, diff and sum
+  std::cout << "Result: ";
+  return result;
 }
 
 int var(double result) {
