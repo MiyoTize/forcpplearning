@@ -11,9 +11,10 @@ int main() {
   else {
     std::cout << "Bye!";
     return 0;
+  }
 }  
 
-int fuck(double result) {
+void fuck(double result) {
   std::cin >> answer;
   char answer;
   while(answer == 'y') {
@@ -25,10 +26,7 @@ int fuck(double result) {
     std::cout << "Result: ";
     return result;
   }
-
 }
-
-
 
 int var(double result) {
   switch(choice) {
