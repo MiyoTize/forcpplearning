@@ -1,6 +1,6 @@
 #include <iostream>
 
-int calc() {
+void calc() {
   int x;
   int y;
   std::cout << "\nPlease, write here x and y:\n";
@@ -14,18 +14,17 @@ int calc() {
   } else {
     std::cout << "0 is evil";
   }
-  return 0;
 }
 
 int main() {
   int x, y;
   std::cout << "Heyo! Here Miyo!\n"
-            << "Do you want use calculator? (1/0): ";
-  bool a; // answer
+            << "Do you want use calculator? (Y/n): ";
+  char a; // answer
   std::cin >> a;
-  while(a == true) {
+  while(a == 'y') {
     int z = calc();
-    std::cout << "\nDo you want continue? (1/0): ";
+    std::cout << "\nDo you want continue? (Y/n): ";
     std::cin >> a;
   }
   std::cout << "Bye!";
