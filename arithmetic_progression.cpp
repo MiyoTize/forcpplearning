@@ -6,7 +6,7 @@
 int main() {
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want solve something? (Y/n): ";
-  bool answer;
+  char answer;
   if (answer == 'y') {
     fuck();
   } else {
@@ -16,8 +16,6 @@ int main() {
 }  
 
 void fuck(double result) {
-  std::cin >> answer;
-  char answer;
   while(answer == 'y') {
     double result;
     std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
