@@ -18,9 +18,9 @@ int main() {
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want play in clicker?\n"
             << "You need click 1000 times. (1/0):\n";
-  bool a; // answer
+  char a; // answer
   std::cin >> a;
-  if (a == true) {
+  if (a == 'y') {
     while (x <= 1000) {
       int z{click(x)};
     }
