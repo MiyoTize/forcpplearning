@@ -5,10 +5,11 @@
 
 void fuck(double result) {
   double result;
+  int a, n, b, s; // firts penis, quantity of penis, diff and sum
   std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
   int choice; // 1 or 2 or 3 or 4
   std::cin >> choice;
-  int a, n, b, s; // firts penis, quantity of penis, diff and sum
+  z = var();
   std::cout << "Result: ";
   return result;
 }
