@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cmath>
 
-int first(double a, double b, double x) {
+void first(double a, double b, double x) {
   int result;
   if(a == 0) {
     result = 0;
@@ -27,7 +27,6 @@ int operfirst() {
     std::cout << "\nFuck! A = 0...\n"
               << "Dont have x\n";
   }  
-  return 0;
 }
 
 int second(double a, double b, double c) {
@@ -59,7 +58,7 @@ int second(double a, double b, double c) {
   }
   return result;
 }
-int opersecond() {
+void opersecond() {
   int result;
   int a, b, c, D, x1, x2;
   std::cout << "Please, write A, B and C:\n";
@@ -81,18 +80,14 @@ int opersecond() {
   }
 } 
 
-int text() {
+int main() {
   std::cout << "Heyo! Here Miyo!\n"  
             << "You in equationsolver\n"
             << "Please, write what you want solve:\n"
             << "1. Ax + B = 0\n"
             << "2. Ax^2 + Bx + C = 0\n"
             << "(1/2):";
-}
-
-int main() {
   int answer;
-  int text();
   std::cin >> answer;
   if(answer == 1) {
     int operfirst();
