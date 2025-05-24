@@ -7,8 +7,9 @@ int main() {
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want solve something? (Y/n): ";
   bool answer;
-  if (answer) fuck();
-  else {
+  if (answer == 'y') {
+    fuck();
+  } else {
     std::cout << "Bye!";
     return 0;
   }
