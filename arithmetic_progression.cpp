@@ -3,19 +3,6 @@
 
 #include <iostream>
 
-int main() {
-  std::cout << "Heyo! Here Miyo!\n"
-            << "Do you want solve something? (Y/n): ";
-  char answer;
-  while (answer == 'y') {
-    fuck();
-    std::cin >> answer;
-  } else {
-    std::cout << "Bye!";
-    return 0;
-  }
-}  
-
 void fuck(double result) {
   double result;
   std::cout << "Please, write what you want:\n1. find sum\n2. find first penis\n3. find difference\n4. find quantity of penis\n: ";
@@ -70,3 +57,16 @@ int var(double result) {
       }
   }
 }
+
+int main() {
+  std::cout << "Heyo! Here Miyo!\n"
+            << "Do you want solve something? (Y/n): ";
+  char answer;
+  while (answer == 'y') {
+    fuck();
+    std::cin >> answer;
+  } else {
+    std::cout << "Bye!";
+    return 0;
+  }
+}  
