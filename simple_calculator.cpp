@@ -30,7 +30,7 @@ int calc() {
       return 0;
 	  
     case '*':
-      std::cout << "x * y = " << x + y << "\n";
+      std::cout << "x * y = " << x * y << "\n";
       return 0;
 	  
     case '/':
