@@ -27,7 +27,7 @@ void matrix()
       std::cout << "Please, write a place of mAssive:\n"
                 << "I: ";
       std::cin >> i;
-      std::cout << "j: ";
+      std::cout << "J: ";
       std::cin >> j;
       std::cout << "Result: " << matrix[i][j];
       break;    
@@ -54,7 +54,7 @@ void matrix()
       } else {
         std::cout << "Try again!\n";
       }
-			break;
+      break;
 
     case 3: // print all elements
       for (i = 0; i < 5; ++i) {
@@ -62,7 +62,7 @@ void matrix()
           std::cout << matrix[i][j] << " ";
         }
       }
-			break;
+    break;
   }
 }
 
