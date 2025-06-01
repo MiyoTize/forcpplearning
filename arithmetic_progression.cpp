@@ -19,7 +19,7 @@ void variants(double result) // solving
   double s; // sum of penis
   int choice;
   std::cin >> choice;
-	switch(choice) { // 1 or 2 or 3 or 4
+  switch(choice) { // 1 or 2 or 3 or 4
     case 1:
       std::cout << "\n\nWrite a, b and n: ";
       std::cin >> a >> b >> n;
