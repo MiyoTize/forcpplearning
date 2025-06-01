@@ -71,8 +71,8 @@ int main()
             << "Do you want solve something?\n\n(Y/n): ";
   std::cin >> answer; // y or n
   while (answer == 'y') {
-    fun(choice); // 1 or 2 or 3 or 4
-    variants(result); // solving
+    void fun(int choice); // 1 or 2 or 3 or 4
+    void variants(double result); // solving
     std::cout << "Do you want continue?\n\n(Y/n): ";
     std::cin >> answer;
   }
