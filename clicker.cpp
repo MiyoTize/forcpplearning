@@ -1,11 +1,10 @@
 #include <iostream>
 
-void click() { // for clicks
+void click() {
   int x = 0, y;
   std::cout << x << " + 1 = ";
   std::cin >> y;
   while (++x == y) {
-    // result looks like x + 1 = ++x
     std::cout << "True!\n"
               << x << " + 1 = ";
     std::cin >> y;
