@@ -9,15 +9,15 @@ void fun(int choice) // 1 or 2 or 3 or 4
 /*Mayo 0_.*/<< "4. find quantity of penis\n\n"
 /*Opezdoll*/<< "Write here: ";
   std::cin >> choice;
-	// MiyoOoOOooOOOooOo I LOVE UUUU!!! I LOVE YOU TOO MIYOOOOO ah :O <3
+// MiyoOoOOooOOOooOo I LOVE UUUU!!! I LOVE YOU TOO MIYOOOOO ah :O <3
 }
 
 void variants(double result) // solving
 {
-	double a; // firts penis
-	double n; // quantity of penis
-	double b; // diff of penis
-	double s; // sum of penis
+  double a; // firts penis
+  double n; // quantity of penis
+  double b; // diff of penis
+  double s; // sum of penis
   int choice;
   switch(choice) { // 1 or 2 or 3 or 4
     case 1:
@@ -60,8 +60,8 @@ void variants(double result) // solving
         std::cout << "Fucking failed!\n\n";
       }
       break;
-	}
-	std::cout << "Result: " << result;
+    }
+  std::cout << "Result: " << result;
 }
 
 int main()
@@ -70,10 +70,10 @@ int main()
   std::cout << "Heyo! Here Miyo!\n"
             << "Do you want solve something?\n\n(Y/n): ";
   std::cin >> answer; // y or n
-	while (answer == 'y') {
+  while (answer == 'y') {
     fun(choice); // 1 or 2 or 3 or 4
     variants(result); // solving
-		std::cout << "Do you want continue?\n\n(Y/n): ";
+    std::cout << "Do you want continue?\n\n(Y/n): ";
     std::cin >> answer;
   }
   std::cout << "\nBye!\n\n";
