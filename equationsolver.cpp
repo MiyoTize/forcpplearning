@@ -4,22 +4,22 @@
 #include <iostream>
 #include <cmath>
 
-void first(double a, double b, double x) {
-  int result;
+void first()
+{
+  double result, a, b, x;
   if(a == 0) {
     result = 0;
   } else {
     x = -b / a;
     result = 1;
   }
-  return result;
 }
-int operfirst() {
-  int result;
-  double a, b, x;
+
+void operfirst() {
+  double result, a, b, x;
   std::cout << "Please, write A and B:\n";
   std::cin >> a >> b;
-  double endfirst = first(a, b, x);   
+  double endfirst = first();   
   if(result == 1) {
     std::cout << "Have 1 x:\n"
               << "\nX = " << x;
