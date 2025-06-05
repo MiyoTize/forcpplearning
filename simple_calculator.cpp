@@ -20,7 +20,7 @@ int calc()
   unsigned number;
   std::cin >> number; // symbol or word
   std::cout << "\n\nResult:\n\n";
-	switch(number) {
+  switch(number) {
     case 1:
       std::cout << "x + y = " << x + y << "\n\n";
       return 0;
@@ -81,8 +81,8 @@ int main()
   char answer;
   std::cin >> answer; // answer
 
-	while(answer == 'y') {
-		calc();
+  while(answer == 'y') {
+    calc();
     std::cout << "Do you want continue? (Y/n): ";
     std::cin >> answer;
   }
