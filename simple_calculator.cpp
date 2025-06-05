@@ -1,88 +1,91 @@
 #include <iostream>
 #include <cmath>
 
-int calc() {
+int calc()
+{
   double x, y;
-  std::cout << "Write x and y please: ";
+  std::cout << "\nWrite x and y please: ";
   std::cin >> x >> y;
 
   std::cout << "What you want?\n"
-	    << "1.+\n"
-	    << "2.-\n"
-	    << "3.*\n"
-	    << "4./\n"
-	    << "5.p (pow)\n"
-	    << "6.s (sqrt)\n"
-	    << "7.l (log)\n"
-	    << "8.r (round)\n"
-	    << "Write here: ";
-  char s;
-  std::cin >> s; // symbol or word
-  std::cout << "\nResult:\n";
-  switch(s) {
-    case '+':
-      std::cout << "x + y = " << x + y << "\n";
+/*:)*/<< "1. +\t"
+/*im*/<< "2. -\n"
+/*Mi*/<< "3. *\t"
+/*yo*/<< "4. /\n"
+/*Ti*/<< "5. pow\t"
+/*ze*/<< "6. sqrt\n"
+/*Ha*/<< "7. log\t"
+/*Ha*/<< "8. round\n\n"
+/*Ha*/<< "Write here: ";
+  unsigned number;
+  std::cin >> number; // symbol or word
+  std::cout << "\n\nResult:\n\n";
+	switch(number) {
+    case 1:
+      std::cout << "x + y = " << x + y << "\n\n";
       return 0;
-	  
-    case '-':
+
+    case 2:
       std::cout << "x - y = " << x - y << "\n"
-                << "y - x = " << y - x << "\n";
+                << "y - x = " << y - x << "\n\n";
       return 0;
 	  
-    case '*':
-      std::cout << "x * y = " << x * y << "\n";
+    case 3:
+      std::cout << "x * y = " << x * y << "\n\n";
       return 0;
 	  
-    case '/':
+    case 4:
       if(x!=0 && y!=0) {
         std::cout << "x / y = " << x / y << "\n" 
-                  << "y / x = " << y / x << "\n"; 
+                  << "y / x = " << y / x << "\n\n"; 
       }
       else {
-        std::cout << "Fucking fail!" << "\n";
+        std::cout << "Fucking fail!" << "\n\n";
       }
       return 0;
 	  
-    case 'p':
+    case 5:
       std::cout << "pow(x, y) = " << pow(x, y) << "\n"
-                << "pow(y, x) = " << pow(y, x) << "\n";
+                << "pow(y, x) = " << pow(y, x) << "\n\n";
       return 0;
 	  
-    case 's':
+    case 6:
       if(x>=0 && y>=0) {
         std::cout << "sqrt(x) = " << sqrt(x) << "\n"
-                  << "sqrt(y) = " << sqrt(y) << "\n";
+                  << "sqrt(y) = " << sqrt(y) << "\n\n";
       } else {
-        std::cout << "Fucking fail!" << "\n";
+        std::cout << "Fucking fail!" << "\n\n";
       }
       return 0;
 	  
-    case 'l':
+    case 7:
       if(x>=0 && y>=0) {
         std::cout << "log(x) = " << log(x) << "\n"
-                  << "log(y) = " << log(y) << "\n";
+                  << "log(y) = " << log(y) << "\n\n";
       } else {
-        std::cout << "Fucking fail!" << "\n";
+        std::cout << "Fucking fail!" << "\n\n";
       }
       return 0;
 	  
-    case 'r':
+    case 8:
       std::cout << "round(x) = " << round(x) << "\n"
-                << "round(y) = " << round(y) << "\n";
-      return 0;
+                << "round(y) = " << round(y) << "\n\n";
   }
   return 0;
 }
 
-int main() {
+int main()
+{
   std::cout << "Heyo! Here Miyo Kislyy :)" << "\n"
-            << "Maybe you want solve something? Y/n ";
-  char a;
-  std::cin >> a; // answer
-  while(a == 'y') {
-    int z = calc();
+            << "Maybe you want solve something?\n\n(Y/n): ";
+  char answer;
+  std::cin >> answer; // answer
+
+	while(answer == 'y') {
+		calc();
     std::cout << "Do you want continue? (Y/n): ";
-    std::cin >> a;
+    std::cin >> answer;
   }
-  std::cout << "Bye!";
+  std::cout << "\n\nBye!\n\n";
+  return 0;
 }

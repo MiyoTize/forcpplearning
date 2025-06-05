@@ -3,6 +3,9 @@
 
 class Student
 {
+  private:
+    std::string mail;
+    std::string password;
   public:
     std::string name;
     unsigned age;
