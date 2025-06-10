@@ -26,7 +26,7 @@ void fun(std::uint32_t b_number, char answer)
 { 
   while(answer == 'y')
   {
-		std::cout << "\nWrite number here: ";
+    std::cout << "\nWrite number here: ";
     std::cin >> b_number;
     Bitset out{b_number};
 
@@ -38,7 +38,7 @@ void fun(std::uint32_t b_number, char answer)
 
 
 int main() {
-	std::uint32_t b_number;
+  std::uint32_t b_number;
   char answer;
   std::cout << "\nHeyo! Its a Miyo!"
             << "\n\nDo you want start?"
