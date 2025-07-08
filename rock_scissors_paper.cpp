@@ -1,76 +1,81 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstddef>
 #include <string>
 #include <ctime>
+using std::cout, std::cin, std::string;
 
-using std::cout;
-using std::cin;
-using std::string;
-
-uint8_t win;
-uint8_t lose;
-
-int choice()
-{ // 1, 2 or 3. else: >:(
-  cout << "\nPlease, write your choice"
-/*Miy*/<< "\n[1]: Rock"
-/*oTi*/<< "\n[2]: Scissors"
-/*zen*/<< "\n[3]: Paper"
-       << "\nHere: ";
-  uint8_t obj; // rock(1), scissors(2) or paper(3)
-  cin >> obj;
-  uint8_t size = 3;
-  string objarray[size] = {"Rock", "Scissors", "Paper"};
-  while(obj>size && obj<1)
-  {
-    cout << "\nFail! Try again!\n\n";
-    cin >> obj;
-  }
-  cout << "\nYour choice is " << objarray[obj] << ", right?"
-       << "\nY/n: ";
-  char answer;
-  cin >> answer;
-  while(answer == 'n')
-  { // shit this code used 2 times noo ;( 
-    cin >> obj;
-    while(obj!=1 && obj!=2 && obj!=3)
-    {
-      cout << "\nFail! Try again!\n\n";
-      cin >> obj;
-    }
-  }
-  return 0;
+enum gameOption {
+  paper,
+  rock,
+  scissors,
 };
 
-int play()
-{
-  std::srand(std::time(0)); // machine choice
-  int random = (std::rand() % 4);
-  uint8_t obj;
-  if((obj==1 && random==3) || (obj==2 && random==1) || (obj==3 && random==2))
-{ // win
-  std::cout << "You win!";
-  ++win; // :10 global
-} else { // lose
-  std::cout << "You lose!";
-  ++lose; // :11 global
-  return 0;
+enum gameResult {
+  win,
+  defeat,
+  draw,
 };
 
-int main() 
-{
-  cout << "\nHeyo! I am MiyoTize the Crazey Tizey Dikiyan Aanas"
-       << "\nDo you want start this game?\nY/n: ";
-  char answer;
-  cin >> answer;
-  while(answer == 'y')
-  { 
-    choice();
-    play();
-    cout << "\nWins: " << win
-         << "\nLoses: " << lose;
-    cout << "\n\nDo you want play again?\nY/n: ";
-    cin >> answer;
-  }
+const gameResult gameResultMatrix[3][3] = {
+    {draw, win, defeat},
+    {defeat, draw, win},
+    {win, defeat, draw},
+};
+
+gameOption randomOption();
+gameOption inputOption();
+gameResult evalGame(gameOption p1, gameOption p2);
+string formatGame(gameOption g);
+string formatGameResult(gameResult g);
+void printMenu();
+
+int main() {
+  srand(time(nullptr));
+  printMenu();
+  gameOption yourOption = inputOption();
+  gameOption enemyOption = randomOption();
+  cout << "your object is: " << formatGame(yourOption) << '\n';
+  cout << "enemy object is: " << formatGame(enemyOption) << '\n';
+  cout << "result: " << formatGameResult(evalGame(yourOption, enemyOption)) << '\n';
   return 0;
+}
+
+void printMenu() {
+  cout << "Select One:\n"
+/*Miy*/<< "\t1 - Paper\n"
+/*oTi*/<< "\t2 - Rock\n"
+/*zen*/<< "\t3 - Scissors\n";
+}
+
+gameOption randomOption() { return static_cast<gameOption>(rand() % 3); }
+
+gameOption inputOption() {
+  size_t gameIdx;
+  cin >> gameIdx;
+  return static_cast<gameOption>(gameIdx - 1);
+}
+
+gameResult evalGame(gameOption p1, gameOption p2) {
+  return gameResultMatrix[p1][p2];
+}
+
+string formatGame(gameOption g) {
+  if (g == 0) {
+    return "paper";
+  } else if (g == 1) {
+    return "rock";
+  } else {
+    return "scissors";
+  }
+}
+
+string formatGameResult(gameResult g) {
+  if (g == win) {
+    return "win";
+  } else if (g == defeat) {
+    return "defeat";
+  } else {
+    return "draw";
+  }
 }
