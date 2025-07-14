@@ -12,10 +12,8 @@ using std::cout, std::cin, std::cerr, std::endl;
 // FIEND
 uint8_t i; // width
 uint8_t j; // height
-uint8_t x_size;
-uint8_t y_size;
-#define height 10
-#define width 10
+uint8_t height = 0;
+uint8_t width = 0;
 
 struct point {
   uint8_t live:1;
@@ -147,9 +145,13 @@ int cmp_world(point w1[][height], point w2[][height])
   return 0;
 };
 
-
 int main()
 {
+  cout << "\nHello! My name is Miyo"
+       << "\nWrite size of x-line";
+  cin >> height;
+  cout << "\nWrie size of y-line";
+  cin >> width;
   point world[width][height];
   point prev_world[width][height];
   init_world(world);
