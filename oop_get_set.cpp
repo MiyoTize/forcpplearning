@@ -3,21 +3,20 @@ using std::cout, std::cin;
 
 class Point {
 private:
-  int x;
-  int y;
+  int x, y;
 public: 
   int GetX() {
     return x;
   }
-  void SetX(int ValueX) {
-    x = ValueX;
+  void SetX() {
+    cin >> x;
   }
 
   int GetY() {
     return y; 
   }
-  void SetY(int ValueY) {
-    y = ValueY;
+  void SetY() {
+    cin >> y;
   }
   
   void Print() {
@@ -26,14 +25,10 @@ public:
 };
 
 int main() {
-  int ValueX;
-  int ValueY;
-
-  Point a;
-  cout << "Hi! Write here X and Y:";
-  cin >> ValueX >> ValueY;
-  a.SetX(ValueX);
-  a.SetY(ValueY);
-  a.Print();
+  Point out;
+  cout << "\nHi! Write here X and Y:";
+  out.SetX();
+  out.SetY();
+  out.Print();
   return 0;
 }
