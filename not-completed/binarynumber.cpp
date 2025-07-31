@@ -1,50 +1,41 @@
 #include <iostream>
-#include <cstdint>
 #include <bitset>
+#include <string>
+using std::cout, std::cin, std::string;
 
 class Bitset
 {
-  public:
-    Bitset(std::uint32_t b_number)
-    {
-      number = b_number;
-      std::bitset<16> number;
-      std::cout << "\n" << number;
-    }
+private:
+  string word;
 
-    ~Bitset()
-    {
-      std::cout << "\nDeleted!";
-    }
+public:
+  Bitset(string value) : word(value) {
+    cout << "\nYour word is: " << word;
+    std::bitset<4> word;
+    cout << "\nYour number with bitset is: " << word;
+  }
 
-  private:
-  std::uint32_t number;
-
-};
-
-void fun(std::uint32_t b_number, char answer)
-{ 
-  while(answer == 'y')
-  {
-    std::cout << "\nWrite number here: ";
-    std::cin >> b_number;
-    Bitset out{b_number};
-
-    std::cout << "\nDo you want continue?"
-              << "(Y/n):\t";
-    std::cin >> answer;
+  ~Bitset() {
+    cout << "\nDeleted!";
   }
 };
 
-
-int main() {
-  std::uint32_t b_number;
+int main()
+{
   char answer;
-  std::cout << "\nHeyo! Its a Miyo!"
-            << "\n\nDo you want start?"
-            << "\n(Y/n):\t";
-  std::cin >> answer;
-  fun(b_number, answer);
-  std::cout << "\n\nBye!!!\n\n";
+  string n;
+  cout << "\nHeyo! Its a Miyo!"
+       << "\nDo you want start?"
+       << "\n(Y/n): ";
+  cin >> answer;
+  while(answer == 'y') {
+    cout << "\nWrite word here: ";
+    cin >> n;
+    Bitset obj(n);
+    cout << "\nDo you want continue?"
+         << "\n(Y/n): ";
+    cin >> answer;
+  }
+  cout << "\n\nBye!!!\n\n";
   return 0;
 }
