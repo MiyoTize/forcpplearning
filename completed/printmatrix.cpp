@@ -1,81 +1,108 @@
-
-// ITS WORK STRANGE. ILL FIX SOON
-
 #include <iostream>
+#include <string>
+using std::cout, std::cin, std::string;
 
 void matrix()
-{
-  int matrix[5][5] = {
-  {1, 2, 3, 4, 5},
-  {6, 7, 8, 9, 10},
-  {11, 12, 13, 14, 15},
-  {16, 17, 18, 19, 20},
-  {21, 22, 23, 24, 25}
-  };
-
-  std::cout << "What do you want?\n"
-            << "1. print one number of massive\n"
-            << "2. print one string\n"
-            << "3. print all strings\n"
-            << "Please, write here: ";
-  int choice;
-  std::cin >> choice;
-  int i{};
-  int j{};
-  switch(choice) {
-    case 1: // print only one number
-      std::cout << "Please, write a place of mAssive:\n"
-                << "I: ";
-      std::cin >> i;
-      std::cout << "J: ";
-      std::cin >> j;
-      std::cout << "Result: " << matrix[i][j];
+{ // alg for make/print matrix
+  uint32_t i{}; // first index
+  uint32_t j{}; // second index
+  uint32_t h; // height
+  uint32_t w; // width
+  // MATRIX CREATION
+  cout << "\nChoose matrix size:\n"
+       << "height: ";
+  cin >> h;
+  cout << "width: ";
+  cin >> w;
+  uint32_t matrix[h][w]{};
+  // MATRIX FILLING
+  uint32_t counter = 0;
+  for(i = 0; i < h; ++i) {
+    for(j = 0; j < w; ++j) {
+      matrix[i][j] = ++counter;
+    } 
+  }
+  // PRINTING
+  cout << "\nWhat do you want print?"
+       << "\n[1] - print one index"
+       << "\n[2] - print one index string"
+       << "\n[3] - print all index strings"
+       << "\nWrite here: ";
+  uint16_t print; // 1, 2 or 3
+  cin >> print;
+  switch(print) 
+  { // VARIANTS
+    case 1: // print one number
+      cout << "\nWrite index"
+           << "\ni: ";
+      cin >> i;
+      cout << "\nj: ";
+      cin >> j;
+      cout << "\nResult: " << matrix[i][j];
       break;    
+
     case 2: // print string ( i or j )
-      std::cout << "Please, write i or j of massive (1 or 2): ";
-      int iorj; // i or j
-      std::cin >> iorj;
+      cout << "\nChoose index:"
+           << "\n[1] - i"
+           << "\n[2] - j"
+           << "\nWrite number here: ";
+      uint16_t iorj; // i or j
+      cin >> iorj;
       if(iorj == 1) { // for i
-        std::cout << "Please, write i here: ";
-        std::cin >> i;
+        cout << "\nWrite i: ";
+        cin >> i;
         j = 0;
-        while(j < 5) {
-          std::cout << matrix[i][j] << " ";
+        cout << "\nResult:\n";
+        while(j < w) {
+          cout << matrix[i][j] << ' ';
           ++j;
         }
       } else if(iorj == 2) { // for j
-        std::cout << "Please, write j here: ";
-        std::cin >> j;
+        cout << "\nWrite j: ";
+        cin >> j;
         i = 0;
-        while(i < 5) {
-          std::cout << matrix[i][j] << " ";
+        cout << "\nResult:\n";
+        while(i < h) {
+          std::cout << matrix[i][j] << ' ';
           ++i;
         }
       } else {
-        std::cout << "Try again!\n";
+        cout << "\nTry again!\n";
       }
       break;
 
     case 3: // print all elements
-      for (i = 0; i < 5; ++i) {
-        for (j = 0; j < 5; ++j) {
-          std::cout << matrix[i][j] << " ";
+      cout << "\nResult:\n";
+      for (i = 0; i < h; ++i) {
+        cout << "\n";
+        for (j = 0; j < w; ++j) {
+          cout << matrix[i][j] << ' ';
         }
       }
-    break;
+      break;
   }
-}
+};
 
-int main() {
-  std::cout << "Heyo! Here Miyo!\n"
-            << "Do you want matrix?\n(Y/n): ";
+int main() 
+{
+  cout << "\nHeyo! Here Miyo!"
+       << "\nDo you want matrix? Y/n: ";
   char answer; // y or n
-  std::cin >> answer;
+  cin >> answer;
   while(answer == 'y') {
     matrix();
-    std::cout << "\n\nDo you want continue?\n(Y/n): ";
-    std::cin >> answer;
+    cout << "\n\nDo you want continue? Y/n: ";
+    cin >> answer;
   }
-  std::cout << "Bye!\n";
+  while (answer == 'u') {
+    cout << "\nMe?.. A... >_<. OK, u can kiss me.\n";
+    string kiss;
+    cin >> kiss;
+    if(kiss == "kiss") {
+      cout << "\nAah~.. (Miyo kissed you)"
+           << "\nI love you.\n";
+    }
+  }
+  cout << "\nBye!\n";
   return 0;
 }
